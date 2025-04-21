@@ -66,11 +66,12 @@ Answer: C:\Users\FINANC~1\AppData\Local\Temp\11111.exe  <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-2. 
+2. What is listed as the company name?
 
 <p align="center">
-    I had to do a google search on how to write the proper query for creating a list of users. I was about to find it in the splunk community website. I pressed enter of the completed search query(#1) and saw two users that appeared very similar. With a closer look, I spotted the imposter(#2).
-<img width="1440" alt="Screenshot 2025-04-19 at 8 23 18 AM" src="https://github.com/user-attachments/assets/45c7ad00-c41a-46a0-9b7a-79718a8efdc3" />
+   I added the command line from question 1 into the search bar. I looked at the field Company and there was the answer.
+<img width="1440" alt="Screenshot 2025-04-21 at 9 12 34 AM" src="https://github.com/user-attachments/assets/30e436b2-efd9-4bc0-87f8-df7ca36790e8" />
+
 
 
 
@@ -78,7 +79,7 @@ Answer: C:\Users\FINANC~1\AppData\Local\Temp\11111.exe  <br/>
 
 <br />
 <br />
-Answer: <br/>
+Answer: NirSoft<br/>
 
 
 
