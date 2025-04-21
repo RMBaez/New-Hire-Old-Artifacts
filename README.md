@@ -216,11 +216,13 @@ Answer: 2147735503,2147737010,2147737007,2147737394 <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-9. 
+9. Another malicious binary was executed on the infected workstation from another AppData location. What was the full path to the binary?
 
 <p align="center">
-   I copied and pasted the url ' https[:]//controlc[.]com/e4d11035 '(in its fanged format) into the website VirusTotal. I went to the detail section and kept scrolling until the saw the pattern mentioned in the question
-<img width="1440" alt="Screenshot 2025-04-19 at 10 36 13 AM" src="https://github.com/user-attachments/assets/27da7b70-1c00-417c-96c4-6a9f0a3162d4" />
+   I knew I had to go to a new directory under the same user so I put into the search bar ' index=main C:\\Users\\Finance01\\AppData '.
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/2a897bd0-cf91-4dd0-a9a7-44acc094b758" />
+    I went to the field Images and looked at the results. There were two with a high count. I did not know which binary was malicious or if either of them where. I did google searches on them and found that one of them was an adware.
+<img width="1440" alt="Screenshot 2025-04-21 at 12 14 24 PM" src="https://github.com/user-attachments/assets/fd28f46d-9115-4392-8e1e-f56f7cfe759d" />
 
 
 
@@ -229,7 +231,7 @@ Answer: 2147735503,2147737010,2147737007,2147737394 <br/>
 
 <br />
 <br />
-Answer: <br/>
+Answer: C:\Users\Finance01\AppData\Roaming\EasyCalc\EasyCalc.exe<br/>
 
 
 
@@ -237,10 +239,12 @@ Answer: <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-10. 
+10. What were the DLLs that were loaded from the binary from the previous question? Enter the answers in alphabetical order. (format: file1.dll,file2.dll,file3
 
 <p align="center">
-   The answer is found in the same event as in question 4.
+   I plugged in the search 'index=main C:\Users\Finance01\AppData\Roaming\EasyCalc\EasyCalc.exe'. To get the full picture of the path, I went to the field 'ImageLoaded'. There I was able the dll files.
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/168384e1-d50c-47a7-91d7-1d6f04e54437" />
+
 
 
 
@@ -249,4 +253,4 @@ Answer: <br/>
 
 <br />
 <br />
-Answer: <br/>
+Answer: ffmpeg.dll,nw.dll,nw_elf.dll<br/>
