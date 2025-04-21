@@ -44,7 +44,7 @@ Your manager has tasked you to sift through the events of Widget LLC's Splunk in
 
 <b>Answer the question below <br/>
 
-1. How many logs are ingested from the month of March, 2022?
+1. 
 
 <p align="center">
   First, I input into the search bar index=win-eventlogs since that is where all the information is stored and I also added EventID=4688 for the type of event discovered. Seecond, I adjusted the date range since it is asking about the month of March in the year 2022. After those two steps, I received the answer.
@@ -54,7 +54,7 @@ Your manager has tasked you to sift through the events of Widget LLC's Splunk in
 
 <br />
 <br />
-Answer: 13959 <br/>
+Answer:  <br/>
 
 
 
@@ -63,7 +63,7 @@ Answer: 13959 <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-2. Imposter Alert: There seems to be an imposter account observed in the logs, what is the name of that user?
+2. 
 
 <p align="center">
     I had to do a google search on how to write the proper query for creating a list of users. I was about to find it in the splunk community website. I pressed enter of the completed search query(#1) and saw two users that appeared very similar. With a closer look, I spotted the imposter(#2).
@@ -75,7 +75,7 @@ Answer: 13959 <br/>
 
 <br />
 <br />
-Answer: Amel1a <br/>
+Answer: <br/>
 
 
 
@@ -83,8 +83,7 @@ Answer: Amel1a <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-3. Which user from the HR department was observed to be running scheduled tasks?
-
+3. <br/>
 
 <p align="center">
     I didn't know how to find ran scheduled tasks on Splunk so I began to type scheduled task on the search bar and 'schtasks' appeared, I pressed enter and got results. The full search query was 'index=win-eventlogs schtasks'. I then clicked on the field UserName and saw several values. I looked at each user and only one of them where from the HR department.
@@ -96,7 +95,7 @@ Answer: Amel1a <br/>
 
 <br />
 <br />
-Answer: Chris.fort <br/>
+Answer:  <br/>
 
 
 
@@ -106,7 +105,7 @@ Answer: Chris.fort <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-4. Which user from the HR department executed a system process (LOLBIN) to download a payload from a file-sharing host.</b>
+4. </b>
 
 <p align="center">
     I decided to filter for only the HR employees. Because there were so many commands, I decided to add the filter ' | stats count by CommandLine ' to make it easier to analyze. I looked at all the results that were executables and the only one that stood out to me was the first result that appeared.
@@ -120,7 +119,7 @@ Answer: Chris.fort <br/>
 
 <br />
 <br />
-Answer: haroon <br/>
+Answer:  <br/>
 
 
 
@@ -128,7 +127,7 @@ Answer: haroon <br/>
 
 <b>Answer the question below <br/>
 
-5. To bypass the security controls, which system process (lolbin) was used to download a payload from the internet?
+5. 
 
 <p align="center">
     The answer was discussed in the previous question.
@@ -138,7 +137,7 @@ Answer: haroon <br/>
 
 <br />
 <br />
-Answer: certutil.exe <br/>
+Answer:  <br/>
 
 
 
@@ -149,7 +148,7 @@ Answer: certutil.exe <br/>
 
 <b>Answer the question below <br/>
 
-6. What was the date that this binary was executed by the infected host? format (YYYY-MM-DD)
+6.
 
 <p align="center">
     Answer is part of same event as question 4.
@@ -159,7 +158,7 @@ Answer: certutil.exe <br/>
 
 <br />
 <br />
-Answer: 2022-03-04 <br/>
+Answer:  <br/>
 
 
 
@@ -168,7 +167,7 @@ Answer: 2022-03-04 <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-7. Which third-party site was accessed to download the malicious payload?
+7. 
 
 <p align="center">
      Answer is part of same event as question 4.
@@ -178,7 +177,7 @@ Answer: 2022-03-04 <br/>
 
 <br />
 <br />
-Answer: controlc.com <br/>
+Answer:  <br/>
 
 
 
@@ -186,7 +185,7 @@ Answer: controlc.com <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-8. What is the name of the file that was saved on the host machine from the C2 server during the post-exploitation phase?
+8. 
 
 
 
@@ -199,7 +198,7 @@ Answer: controlc.com <br/>
 
 <br />
 <br />
-Answer: benign.exe<br/>
+Answer: <br/>
 
 
 
@@ -209,7 +208,7 @@ Answer: benign.exe<br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-9. The suspicious file downloaded from the C2 server contained malicious content with the pattern THM{..........}; what is that pattern?
+9. 
 
 <p align="center">
    I copied and pasted the url ' https[:]//controlc[.]com/e4d11035 '(in its fanged format) into the website VirusTotal. I went to the detail section and kept scrolling until the saw the pattern mentioned in the question
@@ -222,7 +221,7 @@ Answer: benign.exe<br/>
 
 <br />
 <br />
-Answer: THM{KJ&*H^B0}<br/>
+Answer: <br/>
 
 
 
@@ -230,7 +229,7 @@ Answer: THM{KJ&*H^B0}<br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-10. What is the URL that the infected host connected to?
+10. 
 
 <p align="center">
    The answer is found in the same event as in question 4.
@@ -242,4 +241,4 @@ Answer: THM{KJ&*H^B0}<br/>
 
 <br />
 <br />
-Answer: https://controlc.com/e4d11035 <br/>
+Answer: <br/>
