@@ -193,12 +193,12 @@ Answer: powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_M
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-8. 
+8. Based on the previous answer, what were the four IDs set by the attacker? Enter the answer in order of execution. (format: 1st,2nd,3rd,4th)
 
 
 
 <p align="center">
-    Answer is part of same event as question 4.
+    The IDs are shown based on the previous search bar filter. Go one by one looking at the different exectuables.
 
 
 
@@ -206,7 +206,7 @@ Answer: powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_M
 
 <br />
 <br />
-Answer: <br/>
+Answer: 2147735503,2147737010,2147737007,2147737394 <br/>
 
 
 
