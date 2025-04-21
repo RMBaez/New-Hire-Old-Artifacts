@@ -173,17 +173,19 @@ Answer: WvmIOrcfsuILdX6SNwIRmGOJ.exe, phcIAmLJMAIMSa9j9MpgJo1m.exe <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-7. 
+7. The attacker ran several commands within a PowerShell session to change the behaviour of Windows Defender. What was the last command executed in the series of similar commands?
 
 <p align="center">
-     Answer is part of same event as question 4.
+     I added powershell into the search since I was looking for a powershell command. I need to organize the data some more so I added the command “| Table _time CommandLine” to make a list and "| dedup CommandLine" to remove duplicates.
+  <img width="1440" alt="Screenshot 2025-04-21 at 11 13 10 AM" src="https://github.com/user-attachments/assets/4a2cc1fa-e7a0-4abe-bc51-ff81befe9c7a" />
+
 
 
 
 
 <br />
 <br />
-Answer:  <br/>
+Answer: powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147737394 ThreatIDDefaultAction_Actions=6 Force=True <br/>
 
 
 
