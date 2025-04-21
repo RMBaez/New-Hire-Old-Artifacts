@@ -44,17 +44,20 @@ Your manager has tasked you to sift through the events of Widget LLC's Splunk in
 
 <b>Answer the question below <br/>
 
-1. 
+1. A Web Browser Password Viewer executed on the infected machine. What is the name of the binary? Enter the full path.
 
 <p align="center">
-  First, I input into the search bar index=win-eventlogs since that is where all the information is stored and I also added EventID=4688 for the type of event discovered. Seecond, I adjusted the date range since it is asking about the month of March in the year 2022. After those two steps, I received the answer.
-  <img width="1440" alt="Screenshot 2025-04-19 at 8 02 11 AM" src="https://github.com/user-attachments/assets/2aa52a86-687c-472a-aff1-7ec2cd73bcc6" />
+  First, I adjusted the time to All TIme and in Verbose mode. Then on the search bar I wrote down ' index=main password viewer '.
+<img width="1440" alt="Screenshot 2025-04-21 at 9 06 15 AM" src="https://github.com/user-attachments/assets/838a279e-be52-4ecf-8a65-b86ab590429d" />
+  I went to the CommandLine field which only had one result. I clicked it and saw two commands but only one was an executable.
+<img width="1440" alt="Screenshot 2025-04-21 at 9 07 53 AM" src="https://github.com/user-attachments/assets/6c552bae-9d11-4a7c-bff9-a2a06887465f" />
+
 
 
 
 <br />
 <br />
-Answer:  <br/>
+Answer: C:\Users\FINANC~1\AppData\Local\Temp\11111.exe  <br/>
 
 
 
