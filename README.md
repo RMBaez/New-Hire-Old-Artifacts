@@ -111,21 +111,17 @@ Answer: IonicLarge.exe,PalitExplorer.exe <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-4. </b>
+4. The binary from the previous question made two outbound connections to a malicious IP address. What was the IP address? Enter the answer in a defang format.
 
 <p align="center">
-    I decided to filter for only the HR employees. Because there were so many commands, I decided to add the filter ' | stats count by CommandLine ' to make it easier to analyze. I looked at all the results that were executables and the only one that stood out to me was the first result that appeared.
-  <img width="1440" alt="Screenshot 2025-04-19 at 9 58 15 AM" src="https://github.com/user-attachments/assets/1e747312-4d72-476e-8999-2d188e19d0b3" />
-  There was a hint to this question and it read 'Explore lolbas-project.github.io/ to find binaries used to download payloads'. After doing researh on what a LOLBIN is, I googled 'lolbin certutil.exe' and read that attackers would use certutil.exe for exploitation. So now that I know I have the right command, I clicked and added the command into the search query. I looked for the field username and found the answer.
-<img width="1440" alt="Screenshot 2025-04-19 at 10 20 38 AM" src="https://github.com/user-attachments/assets/7a39dbf6-59c6-4995-8443-1fdedd57246f" />
-
+    I filtered the binary 'IonicLarge.exe' into the search bar. I went to the field 'DestinationIp' and look for any connection(s) made twice to the same ip. Only one did. Defang the ip and that is the answer.
 
 
 
 
 <br />
 <br />
-Answer:  <br/>
+Answer: 2[.]56[.]59[.]42 <br/>
 
 
 
