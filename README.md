@@ -20,8 +20,7 @@ Your manager has tasked you to sift through the events of Widget LLC's Splunk in
 - <b>5. The same binary made some change to a registry key. What was the key path?</b>
 - <b>6. Some processes were killed and the associated binaries were deleted. What were the names of the two binaries? (format: file.xyz,file.xyz)</b>
 - <b>7. The attacker ran several commands within a PowerShell session to change the behaviour of Windows Defender. What was the last command executed in the series of similar commands?</b>
-- <b>8. Based on the previous answer, what were the four IDs set by the attacker? Enter the answer in order of execution. (format: 1st,2nd,3rd,4th)
-</b>
+- <b>8. Based on the previous answer, what were the four IDs set by the attacker? Enter the answer in order of execution. (format: 1st,2nd,3rd,4th)</b>
 - <b>9. What were the DLLs that were loaded from the binary from the previous question? Enter the answers in alphabetical order. (format: file1.dll,file2.dll,file3.dll)</b>
 
 
