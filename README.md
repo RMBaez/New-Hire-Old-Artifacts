@@ -87,19 +87,22 @@ Answer: NirSoft<br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-3. <br/>
+3. Another suspicious binary running from the same folder was executed on the workstation. What was the name of the binary? What is listed as its original filename? (format: file.xyz,file.xyz)
 
 <p align="center">
-    I didn't know how to find ran scheduled tasks on Splunk so I began to type scheduled task on the search bar and 'schtasks' appeared, I pressed enter and got results. The full search query was 'index=win-eventlogs schtasks'. I then clicked on the field UserName and saw several values. I looked at each user and only one of them where from the HR department.
-<img width="1440" alt="Screenshot 2025-04-19 at 9 00 09 AM" src="https://github.com/user-attachments/assets/53b63351-b8b6-4555-806c-16c2b784fc5d" />
-
+    I removed the previous search filters except for 'index=main'. I added 'EventCode=1' since it is for process creation. I went to the field CurrentDirectory and selceted 'C:\Users\Finance01\AppData\Local\Temp\'.
+<img width="1440" alt="Screenshot 2025-04-21 at 9 52 47 AM" src="https://github.com/user-attachments/assets/86c55c55-cbdb-4610-8036-f93309667154" />
+    I went down to the field 'Images" which contained the answer to the first question. I selected and clicked on the result 'C:\Users\Finance01\AppData\Local\Temp\IonicLarge.exe'.
+<img width="1440" alt="Screenshot 2025-04-21 at 10 00 11 AM" src="https://github.com/user-attachments/assets/56f81ac3-a934-4cd0-bb6c-9c66c5953ce8" />
+    I went dow to the field 'OriginalFileName which one had one result. That was the answer to the second question.
+<img width="1440" alt="Screenshot 2025-04-21 at 10 02 51 AM" src="https://github.com/user-attachments/assets/3e3a6333-2351-4587-96da-85ae43962afe" />
 
 
 
 
 <br />
 <br />
-Answer:  <br/>
+Answer: IonicLarge.exe,PalitExplorer.exe <br/>
 
 
 
