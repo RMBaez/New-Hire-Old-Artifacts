@@ -115,6 +115,7 @@ Answer: IonicLarge.exe,PalitExplorer.exe <br/>
 
 <p align="center">
     I filtered the binary 'IonicLarge.exe' into the search bar. I went to the field 'DestinationIp' and look for any connection(s) made twice to the same ip. Only one did. Defang the ip and that is the answer.
+<img width="1440" alt="Screenshot 2025-04-21 at 10 09 58 AM" src="https://github.com/user-attachments/assets/c983acea-f9a5-430d-a2c1-225c11cdf949" />
 
 
 
@@ -129,17 +130,19 @@ Answer: 2[.]56[.]59[.]42 <br/>
 
 <b>Answer the question below <br/>
 
-5. 
+5. The same binary made some change to a registry key. What was the key path?
 
 <p align="center">
-    The answer was discussed in the previous question.
+    I filtered the binary 'IonicLarge.exe' into the search bar. I then went to the field 'EventType' and added 'CreateKey' filter into the search bar. The first event contained the answer
+    <img width="1440" alt="Screenshot 2025-04-21 at 10 31 12 AM" src="https://github.com/user-attachments/assets/7fe1dc3a-d543-4284-af55-5a0633a28507" />
+
 
 
 
 
 <br />
 <br />
-Answer:  <br/>
+Answer:  HKLM\SOFTWARE\Policies\Microsoft\Windows Defender<br/>
 
 
 
@@ -150,17 +153,18 @@ Answer:  <br/>
 
 <b>Answer the question below <br/>
 
-6.
+6. Some processes were killed and the associated binaries were deleted. What were the names of the two binaries? (format: file.xyz,file.xyz)
 
 <p align="center">
-    Answer is part of same event as question 4.
+    There was a hint to this question and it said Process were killed with 'taskkill /im'. I added it into the search bar. Received 5 events. I went to the field 'CommandLine' where the answer could be found.
+<img width="1440" alt="Screenshot 2025-04-21 at 10 52 16 AM" src="https://github.com/user-attachments/assets/003c3e7d-b529-4f79-8671-d26cde9b80a0" />
 
 
 
 
 <br />
 <br />
-Answer:  <br/>
+Answer: WvmIOrcfsuILdX6SNwIRmGOJ.exe, phcIAmLJMAIMSa9j9MpgJo1m.exe <br/>
 
 
 
